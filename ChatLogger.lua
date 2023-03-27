@@ -8,7 +8,6 @@
 ╚═╝░░╚═╝░╚════╝░╚══════╝╚═════╝░╚═╝╚═╝░░╚══╝░╚═════╝░░╚═╝░╚═╝░░░░░░░░╚═╝░╚════╝░░╚════╝░╚══════╝
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     * Creams / Griddys *
-    POV Bonez Coding = game:GetService'Player'[LocalPlayer][Character][Humanoid][RootPart][CFrame][Position]
 ]]
 
 repeat
