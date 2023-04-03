@@ -1,0 +1,7 @@
+local Chatted = {}
+
+game:GetService("Players").PlayerChatted:Connect(function(chatType, player, message)
+    if chatType and player and message then
+        table.insert(Chatted , message)
+    end
+end)
