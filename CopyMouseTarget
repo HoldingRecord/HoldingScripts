@@ -1,0 +1,11 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/HoldingRecord/Xenon/main/CopyRight'),true))()
+local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
+
+Mouse.Button1Down:Connect(function()
+    local Hit = Mouse.Target
+    if Hit.Name then
+        print(string.format(tostring(Hit:GetFullName())))
+        else
+        return task.wait()
+    end
+end)
