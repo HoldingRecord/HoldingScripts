@@ -1,0 +1,17 @@
+local CFrames = {} or nil
+local Connections = {} or nil
+
+table.insert(Connections , game:GetService("RunService").Heartbeat:Connect(function()
+    local AddedCF = game:GetService("Players").LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame
+    table.insert(CFrames , AddedCF)
+end))
+
+
+game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid").HealthChanged:Connect(function(health)
+    if health == 0 or health == 0.1 then
+        for _ , TableConnections in next , Connections do
+            TableConnections:Disconnect()
+            print(table.unpack(CFrames))
+        end
+    end
+end)
