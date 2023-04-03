@@ -1,0 +1,8 @@
+local LocalPlayer = game:GetService("Players").LocalPlayer or nil
+local CFrame = LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame or nil
+LocalPlayer.Character:ClearAllChildren()
+LocalPlayer.CharacterAdded:Connect(function(character)
+    if character and task.wait(0.01) then
+        LocalPlayer.Character:FindFirstChild("HumanoidRootPart").CFrame = CFrame
+    end
+end)
